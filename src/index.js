@@ -7,13 +7,13 @@ import thunkMiddleware from 'redux-thunk';
 import { searchRobots, requestRobots } from './reducers';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
-import 'tachyons';
+import './index.cssimport 'tachyons';
 
 const logger = createLogger();
 
 const rootReducer = combineReducers({searchRobots, requestRobots}) //accepts all the reducers as an object
-const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger)); // thunk helps to implement async redux state
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger)); // thunk helps to implement async redux state';
+
 
 ReactDOM.render(
   <React.StrictMode>
